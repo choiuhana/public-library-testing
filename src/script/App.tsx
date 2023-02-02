@@ -15,6 +15,7 @@ import {
   Text,
   useColorScheme,
   View,
+  NativeModules
 } from 'react-native';
 
 import {
@@ -31,6 +32,9 @@ type SectionProps = PropsWithChildren<{
 
 function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+  const modules = NativeModules.CommonNativeModule.getConstants();
+
+  console.log("-11111",modules);
   return (
     <View style={styles.sectionContainer}>
       <Text
