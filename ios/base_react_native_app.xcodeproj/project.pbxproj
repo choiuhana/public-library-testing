@@ -15,6 +15,9 @@
 		7699B88040F8A987B510C191 /* libPods-base_react_native_app-base_react_native_appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-base_react_native_app-base_react_native_appTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		CE0AE7BA298B5E3000948F88 /* CommonNativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0AE7B9298B5E3000948F88 /* CommonNativeModule.m */; };
+		BC0FACE3EF4149E39689BEEE /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62D308CBE1BF4748B2A9D2D0 /* Pretendard-Bold.otf */; };
+		B08FC3C7C0CA4549BDC47B09 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A74AAE7F732463EBA0BF7AA /* Pretendard-Medium.otf */; };
+		47B023B7FA514FA698FDC50B /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 11D19A1A9C1D4535B5970C74 /* Pretendard-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		D2BA34C3A6EA5752A5A83698 /* Pods-base_react_native_app.productiondebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-base_react_native_app.productiondebug.xcconfig"; path = "Target Support Files/Pods-base_react_native_app/Pods-base_react_native_app.productiondebug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F22BC4CD464ED6336E4E77BC /* Pods-base_react_native_app-base_react_native_appTests.developmentdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-base_react_native_app-base_react_native_appTests.developmentdebug.xcconfig"; path = "Target Support Files/Pods-base_react_native_app-base_react_native_appTests/Pods-base_react_native_app-base_react_native_appTests.developmentdebug.xcconfig"; sourceTree = "<group>"; };
+		62D308CBE1BF4748B2A9D2D0 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; name = "Pretendard-Bold.otf"; path = "../src/resource/fonts/Pretendard-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0A74AAE7F732463EBA0BF7AA /* Pretendard-Medium.otf */ = {isa = PBXFileReference; name = "Pretendard-Medium.otf"; path = "../src/resource/fonts/Pretendard-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		11D19A1A9C1D4535B5970C74 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; name = "Pretendard-Regular.otf"; path = "../src/resource/fonts/Pretendard-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				D9C5CA2328B64C2F99A49BA5 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -176,6 +183,17 @@
 			);
 			name = nativeModule;
 			sourceTree = "<group>";
+		};
+		D9C5CA2328B64C2F99A49BA5 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				62D308CBE1BF4748B2A9D2D0 /* Pretendard-Bold.otf */,
+				0A74AAE7F732463EBA0BF7AA /* Pretendard-Medium.otf */,
+				11D19A1A9C1D4535B5970C74 /* Pretendard-Regular.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -273,6 +291,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BC0FACE3EF4149E39689BEEE /* Pretendard-Bold.otf in Resources */,
+				B08FC3C7C0CA4549BDC47B09 /* Pretendard-Medium.otf in Resources */,
+				47B023B7FA514FA698FDC50B /* Pretendard-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
