@@ -19,7 +19,7 @@ const ScreenMain = ({ route, navigation }: ScreenMainProps) => {
         <Container style={styles.container}>
             <DefaultText style={styles.greeting}>Main Screen</DefaultText>
             <DefaultButton
-                text={"logout"}
+                text={"logout 버튼"}
                 textStyle={{
                     color: colors.on_primary,
                 }}
