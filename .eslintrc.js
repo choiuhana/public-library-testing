@@ -11,6 +11,7 @@ module.exports = {
                 "no-shadow": "off",
                 "no-undef": "off",
                 "@typescript-eslint/explicit-function-return-type": "off",
+                "@typescript-eslint/no-empty-interface": "off",
             },
         },
     ],
