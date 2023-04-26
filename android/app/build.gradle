@@ -117,7 +117,29 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('temp-release.keystore')
+            storePassword 'base_react_native_app'
+            keyAlias 'androidreleasekey'
+            keyPassword 'base_react_native_app'
+        }
     }
+
+    flavorDimensions "config"
+    productFlavors {
+        development {
+            applicationIdSuffix '.dev'
+
+            dimension "config"
+            buildConfigField "String", "BUILD_CONFIG", "\"development\""
+        }
+
+        production {
+            dimension "config"
+            buildConfigField "String", "BUILD_CONFIG", "\"production\""
+        }
+    }
+
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
