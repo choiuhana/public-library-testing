@@ -5,8 +5,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { persistStore } from "redux-persist";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import dark_theme from "./src/res/theme/dark";
-import light_theme from "./src/res/theme/light";
+import dark_theme from "./src/resource/theme/dark";
+import light_theme from "./src/resource/theme/light";
 import store from "./src/script/redux/store";
 
 const Root = () => {

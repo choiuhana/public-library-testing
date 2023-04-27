@@ -7,6 +7,8 @@ import { resetAll } from "../../redux/slice/accountSlice";
 import { NAVIGATOR_TAB_BOTTOM, Params, SCREEN_MAIN } from "../../navigation/screens";
 import Container from "../_common/Container";
 import DefaultText from "../_common/Default/DefaultText";
+import DefaultMediumText from "../_common/Default/DefaultMediumText";
+import DefaultBoldText from "../_common/Default/DefaultBoldText";
 import DefaultButton from "../_common/Default/DefaultButton";
 
 type Props = NativeStackScreenProps<Params[typeof NAVIGATOR_TAB_BOTTOM], typeof SCREEN_MAIN>;
@@ -18,8 +20,11 @@ const ScreenMain = ({ route, navigation }: Props) => {
     return (
         <Container style={styles.container}>
             <DefaultText style={styles.greeting}>Main Screen</DefaultText>
+            <DefaultMediumText style={styles.greeting}>Main Screen</DefaultMediumText>
+            <DefaultBoldText style={styles.greeting}>Main Screen</DefaultBoldText>
+
             <DefaultButton
-                text={"logout 버튼"}
+                text={"BernhardSt"}
                 textStyle={{
                     color: colors.on_primary,
                 }}
@@ -40,7 +45,7 @@ const styles = StyleSheet.create({
     },
     greeting: {
         fontSize: 20,
-        fontWeight: "bold",
+        // fontWeight: "bold",
         margin: 16,
     },
 });

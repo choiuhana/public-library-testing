@@ -36,6 +36,6 @@ export const accountSlice = createSlice({
 export const { setLoginType, setToken, resetAll } = accountSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
-export const selectAccount = (state: RootState) => state.account_reducer;
+export const selectAccount = (state: RootState) => state.accountReducer;
 
 export default accountSlice.reducer;

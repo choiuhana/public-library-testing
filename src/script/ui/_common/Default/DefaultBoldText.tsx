@@ -5,7 +5,7 @@ interface Props extends TextProps {
     style: undefined | TextStyle;
 }
 
-const DefaultText = (props: Props) => {
+const DefaultBoldText = (props: Props) => {
     const { style, children } = props;
 
     return (
@@ -15,7 +15,7 @@ const DefaultText = (props: Props) => {
             style={[
                 style,
                 {
-                    fontFamily: style?.fontFamily || "Pretendard-Regular",
+                    fontFamily: style?.fontFamily || "Pretendard-Bold",
                 },
             ]}>
             {children}
@@ -23,4 +23,4 @@ const DefaultText = (props: Props) => {
     );
 };
 
-export default DefaultText;
+export default DefaultBoldText;
