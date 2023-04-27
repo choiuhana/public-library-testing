@@ -9,9 +9,9 @@ import Container from "../_common/Container";
 import DefaultText from "../_common/Default/DefaultText";
 import DefaultButton from "../_common/Default/DefaultButton";
 
-type ScreenMainProps = NativeStackScreenProps<Params[typeof NAVIGATOR_TAB_BOTTOM], typeof SCREEN_MAIN>;
+type Props = NativeStackScreenProps<Params[typeof NAVIGATOR_TAB_BOTTOM], typeof SCREEN_MAIN>;
 
-const ScreenMain = ({ route, navigation }: ScreenMainProps) => {
+const ScreenMain = ({ route, navigation }: Props) => {
     const dispatch = useAppDispatch();
     const { colors } = useTheme();
 
