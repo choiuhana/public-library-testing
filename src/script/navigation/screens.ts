@@ -7,6 +7,7 @@ export const NAVIGATOR_STACK = "NavigatorStack";
 export const SCREEN_MAIN = "ScreenMain";
 export const SCREEN_LOGIN = "ScreenLogin";
 export const SCREEN_SLIDER = "ScreenSlider";
+export const SCREEN_TOGGLE_SWITCH = "ScreenToggleSwitch";
 
 export type Params = {
     [NAVIGATOR_STACK]: {
@@ -19,5 +20,7 @@ export type Params = {
         [SCREEN_MAIN]: undefined; // || {id: number }
 
         [SCREEN_SLIDER]: undefined;
+
+        [SCREEN_TOGGLE_SWITCH]: undefined;
     };
 };
