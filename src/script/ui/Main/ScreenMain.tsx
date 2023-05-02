@@ -6,7 +6,6 @@ import { useAppDispatch } from "../../../common/hooks";
 import { resetAll } from "../../redux/slice/accountSlice";
 import { NAVIGATOR_TAB_BOTTOM, Params, SCREEN_MAIN } from "../../navigation/screens";
 import Container from "../_common/Container";
-import DefaultBoldText from "../_common/Default/DefaultBoldText";
 import DefaultButton from "../_common/Default/DefaultButton";
 import DefaultText from "../_common/Default/DefaultText";
 

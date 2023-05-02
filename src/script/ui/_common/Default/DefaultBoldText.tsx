@@ -1,12 +1,27 @@
-import React from "react";
+import React, {useMemo} from "react";
 import { Text, TextProps, TextStyle } from "react-native";
 
 interface Props extends TextProps {
-    style: undefined | TextStyle;
+    style?: undefined | TextStyle | TextStyle[];
 }
 
 const DefaultBoldText = (props: Props) => {
     const { style, children } = props;
+
+    const fontFamily = useMemo(() => {
+        let defaultFont = "Pretendard-Bold";
+
+        if (Array.isArray(style)) {
+            const flattenedArr = style.flat(Infinity);
+            flattenedArr.forEach((el) => {
+                defaultFont = el.fontFamily || defaultFont;
+            });
+        } else {
+            return style?.fontFamily || defaultFont;
+        }
+
+        return defaultFont;
+    }, [style]);
 
     return (
         <Text
@@ -15,7 +30,7 @@ const DefaultBoldText = (props: Props) => {
             style={[
                 style,
                 {
-                    fontFamily: style?.fontFamily || "Pretendard-Bold",
+                    fontFamily: fontFamily,
                 },
             ]}>
             {children}
