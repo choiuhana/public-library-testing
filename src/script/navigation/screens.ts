@@ -25,6 +25,6 @@ export type Params = {
 
         [SCREEN_TOGGLE_SWITCH]: undefined;
 
-        SCREEN_DATE_PICKER: undefined;
+        [SCREEN_DATE_PICKER]: undefined;
     };
 };
