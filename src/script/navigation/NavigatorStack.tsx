@@ -10,6 +10,7 @@ const Stack = createNativeStackNavigator<Params[typeof NAVIGATOR_STACK]>();
 
 const NavigatorStack = () => {
     const { login_type } = useAppSelector(selectAccount);
+
     return (
         <Stack.Navigator>
             {login_type === null ? (
